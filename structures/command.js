@@ -67,7 +67,6 @@ return guild_id ? endpoint + "/guilds/" + guild_id + "/commands" : endpoint + "/
 save(guild_id = this.guild_id) {
 return new Promise((re , rej) =>{
 let url = this.url(guild_id)
-console.log(url)
 axios.post(url , {
 name: this.name.toLowerCase(),
 description: this.description,
