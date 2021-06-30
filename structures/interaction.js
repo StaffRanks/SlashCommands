@@ -1,6 +1,7 @@
 const events = require("events");
 const config = require("../config");
 const Eris = require("eris")
+const axios = require("axios")
 
 module.exports = class extends events {
 constructor(client , data) {
@@ -65,7 +66,7 @@ if(d.type === 9) { this.options[d.name] = d.value}
 })
 
 let url = this.url()
-this._client.requestHandler.request("POST", url, true, {type:1}, [])
+axios.post(url, { type: 1 }, { headers: { authorization: this._client._token } })
 this._check();
 }
 
