@@ -1,6 +1,6 @@
 {
   "name": "staffranks-offical-slashcommands-worker",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Discord bot slashCommands manager made for eris",
   "main": "index.js",
   "scripts": {
