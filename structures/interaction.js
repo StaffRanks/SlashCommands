@@ -65,7 +65,7 @@ if(d.type === 9) { this.options[d.name] = d.value}
 })
 
 let url = this.url()
-this._client.requestHandler.request("POST", url, true, {type:1}, undefined)
+this._client.requestHandler.request("POST", url, true, {type:1}, [])
 this._check();
 }
 
